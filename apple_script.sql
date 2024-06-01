@@ -59,7 +59,7 @@ ORDER BY rating_count_tot DESC
 LIMIT 10;
 
 /* QUESTION 6:  Take the 10 apps best rated by users. */
-SELECT track_name, user_rating
+SELECT track_name, prime_genre, user_rating
 FROM applestore2
 ORDER BY user_rating DESC
 LIMIT 10;
@@ -81,6 +81,7 @@ The presence of the Bible app shows that there is also significant engagement wi
 
 /* QUESTION 8:  Take a look on the data you retrieved in the question 6. Give some insights. */
 /* The data reveals the ten best-rated apps by users on the App Store, each with a perfect user rating of 5. 
+Games are the most represented category in this top ten, although we are limiting the results to only 10 and there are many more apps with perfect ratings so we should check all apps with the top ratings to give a more precise analysis.
 
 
 /* QUESTION 9:  TNow compare the data from questions 5 and 6. What do you see? */
